@@ -11,5 +11,6 @@ public class Demo1Application {
 		ConfigurableApplicationContext context = SpringApplication.run(Demo1Application.class, args);
 		Person bean = context.getBean(Person.class);
 		bean.speak();
+		System.out.println(bean);
 	}
 }
